@@ -1,0 +1,18 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    min-height: 150px !important;
+}
+
+.nav-link {
+    color: #e0a434 !important;
+    /*padding-top: 3rem !important;*/
+}
+
+.nav-link:hover {
+    color: black !important;
+}

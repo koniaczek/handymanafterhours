@@ -1,0 +1,14 @@
+.thumbimage {
+    width: 145px;
+    height: 108px;
+}
+
+hr.sep {
+    background-color: #ff8f36;
+    height: 6px;
+}
+
+hr.sep2 {
+    background-color: #a5a4a4;
+    height: 3px;
+}
