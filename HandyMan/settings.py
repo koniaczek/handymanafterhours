@@ -119,4 +119,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'http://192.169.190.180/~rgbnewyorkdev/static/HandyMan/'
+STATIC_ROOT = '/home/rgbnewyorkdev/public_html/static/HandyMan/'
+
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, "static"),
+#    '/home/rgbnewyorkdev/public_html/static/HandyMan/',
+#]
