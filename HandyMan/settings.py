@@ -126,3 +126,4 @@ STATIC_ROOT = '/home/rgbnewyorkdev/public_html/static/HandyMan/'
 #    os.path.join(BASE_DIR, "static"),
 #    '/home/rgbnewyorkdev/public_html/static/HandyMan/',
 #]
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
