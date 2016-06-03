@@ -17,7 +17,8 @@ from django.conf.urls import url
 from django.contrib import admin
 from HandyMan import views
 
+
 urlpatterns = [
-    url(r'', views.HomeView.as_view(), name='home'),
+    url(r'^&', views.HomeView.as_view(), name='home'),
     url(r'^admin/', admin.site.urls),
 ]
