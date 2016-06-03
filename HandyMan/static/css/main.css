@@ -1,5 +1,4 @@
 .thumbimage {
-    width: 130px;
     height: 108px;
     margin-top: 5px;
 }
@@ -55,12 +54,31 @@ h3.column-title {
 
 
 .footnote-menu {
-    background-color: #e3e3e3;
     height: 50px;
     border-radius: 7px;
     margin-top: 15px;
+    background-color: #e3e3e3;
 }
 
+
+@media only screen and (max-width: 642px) {
+    .footnote-menu {
+        height: 70px;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .footnote-menu {
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .footnote-menu {
+        height: 110px;
+    }
+}
 
 .footnote-menu ul {
     padding: 16px 0 0 0;
@@ -189,4 +207,23 @@ h3.column-title {
     border: none;
     position: relative;
     top: 1px;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar-brand > img {
+        display: none;
+    }
+
+    .navbar-nav > li {
+        float: left;
+        width: auto;
+        margin-right: 0;
+    }
+}
+
+
+@media only screen and (max-width: 452px) {
+    .navbar-nav > li > a {
+        font-size: 10px;
+    }
 }

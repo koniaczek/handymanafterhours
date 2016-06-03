@@ -19,6 +19,7 @@ from HandyMan import views
 
 
 urlpatterns = [
-    url(r'^&', views.HomeView.as_view(), name='home'),
+    url(r'^$', views.HomeView.as_view(), name='home'),
     url(r'^admin/', admin.site.urls),
 ]
+
