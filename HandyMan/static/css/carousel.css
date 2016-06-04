@@ -8,4 +8,9 @@
 
 .carousel-inner {
     background-image: url('../img/sliderbg.jpg');
+    height: 300px;
+}
+
+.carousel {
+    height: 300px;
 }

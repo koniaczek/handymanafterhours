@@ -1,199 +1,49 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="{% static 'img/favicon.ico' %}">
-
-    <title>Navbar Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{% static 'css/navbar.css' %}" rel="stylesheet">
-    <link href="{% static 'css/carousel.css' %}" rel="stylesheet">
-    <link href="{% static 'css/main.css' %}" rel="stylesheet">
-    <!-- Custom styles for this template -->
-  </head>
-
-  <body>
-    <div class="container">
-      <!-- Static navbar -->
-
-      <nav class="navbar">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png' %}"></a>
-          </div>
-          <div id="navbar" class="navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-
-      <br>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <div class="row">
-              <div class="col-md-8 carousel-header">
-                <h1>Convenient Hours</h1>
-                <p>Convenient hours of work for our customers.</p>
-                <p><button class="btn btn-default">Read more</button></p>
-              </div>
-              <div class="col-md-4">
-                <img src="{% static 'img/0.png' %}">
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="row">
-              <div class="col-md-8 carousel-header">
-                <h1>Low Prices</h1>
-                <p>Service with the best prices.</p>
-                <p><button class="btn btn-default">Read more</button></p>
-              </div>
-              <div class="col-md-4">
-                <img src="{% static 'img/1.png' %}">
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="row">
-              <div class="col-md-8 carousel-header">
-                <h1>Free Estimate</h1>
-                <p>For a free estimate, simply give us a call at (631) 805 - 7232. Ask for Robert, he will give you all answers.</p>
-                <p><button class="btn btn-default">Read more</button></p>
-
-              </div>
-              <div class="col-md-4">
-                <img src="{% static 'img/2.png' %}">
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="row">
-              <div class="col-md-8 carousel-header">
-                <h1>Best Quality</h1>
-                <p>High quality workmanship and professionalism is our main objective.</p>
-                <p><button class="btn btn-default">Read more</button></p>
-              </div>
-              <div class="col-md-4">
-                <img src="{% static 'img/3.png' %}">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
+{% block content %}
+    <div class="row">
         <div class="col-md-4">
-          <h3 class="column-title">Welcome to our website</h3>
-          <hr class="sep">
-          <p>
-            Welcome to Handyman After Hours, a website where everyone feels cheerfully welcomed.
-            Our company name is not just a made up phrase, but it is in fact "after hours" when we
-            can most effectively serve you and it is the most convenient for our friendly customers.
-            Handyman After Hours is a service with the best prices, high quality workmanship and professionalism is our main objective.</p>
-          <p>We operate in the vicinity of Long Island and are continuously increasing our services.</p>
-          <p><button class="btn btn-default">Learn more</button></p>
+            <h3 class="column-title">Welcome to our website</h3>
+            <hr class="sep">
+            <p>
+                Welcome to Handyman After Hours, a website where everyone feels cheerfully welcomed.
+                Our company name is not just a made up phrase, but it is in fact "after hours" when we
+                can most effectively serve you and it is the most convenient for our friendly customers.
+                Handyman After Hours is a service with the best prices, high quality workmanship and professionalism is
+                our main objective.</p>
+            <p>We operate in the vicinity of Long Island and are continuously increasing our services.</p>
+            <p>
+                <button class="btn btn-default">Learn more</button>
+            </p>
         </div>
         <div class="col-md-4">
-          <h3 class="column-title">Our benefits</h3>
-          <hr class="sep">
-          <p class="p1">Free estimate</p>
-          <p class="p1">Best quality</p>
-          <p class="p1">Low prices</p>
-          <p class="p1">Convenient hours</p>
+            <h3 class="column-title">Our benefits</h3>
+            <hr class="sep">
+            <p class="p1">Free estimate</p>
+            <p class="p1">Best quality</p>
+            <p class="p1">Low prices</p>
+            <p class="p1">Convenient hours</p>
         </div>
         <div class="col-md-4">
-          <h3 class="column-title">Gallery</h3>
-          <hr class="sep">
-          <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-6">
-              <img src="{% static 'img/small_98115EA4-3298-4CED-9489-CF0A28BA5A6D.JPG' %}" class="thumbimage">
+            <h3 class="column-title">Gallery</h3>
+            <hr class="sep">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <a href="{{ photos.0.thumbnail.url }}" target="_blank"><img src="{{ photos.0.thumbnail.tiny.url }}" class="thumbimage"></a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <a href="{{ photos.1.thumbnail.url }}" target="_blank"><img src="{{ photos.1.thumbnail.tiny.url }}" class="thumbimage"></a>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">
-              <img src="{% static 'img/small_IMG_1272.jpg' %}" class="thumbimage">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <a href="{{ photos.2.thumbnail.url }}" target="_blank"><img src="{{ photos.2.thumbnail.tiny.url }}" class="thumbimage"></a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <a href="{{ photos.3.thumbnail.url }}" target="_blank"><img src="{{ photos.3.thumbnail.tiny.url }}" class="thumbimage"></a>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-6">
-              <img src="{% static 'img/small_IMG_1273.jpg' %}" class="thumbimage">
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">
-              <img src="{% static 'img/small_securedownload.jpg' %}" class="thumbimage">
-            </div>
-          </div>
         </div>
-      </div>
-
-      <hr class="sep2">
-
-      <div class="row">
-        <div class="col-md-1 col-sm-3 col-xs-3">
-          <img src="{% static 'img/toolbox.jpg' %}">
-        </div>
-        <div class="col-md-3  col-sm-9 col-xs-9 footnote-title">
-          Explore our services
-        </div>
-        <div class="col-md-8 col-sm-12 col-xs-12 footnote-menu">
-          <ul>
-            <li><a href="#">Kitchen</a></li>
-            <li><a href="#">Bathrooms</a></li>
-            <li><a href="#">Electric</a></li>
-            <li><a href="#">Doors & Windows</a></li>
-            <li><a href="#">Roofing</a></li>
-            <li><a href="#">And more</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row footer">
-        <div class="col-md-9 col-sm-9 col-xs-9">
-          <p>Copyright © 2013 Handyman After Hours, All Rights Reserved</p>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-3">
-          <span class="r-logo">R</span><span class="g-logo">G</span><span class="b-logo">B</span> NewYork Inc.
-        </div>
-      </div>
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  </body>
-</html>
+    </div>
+{% endblock %}

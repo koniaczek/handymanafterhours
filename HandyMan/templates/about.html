@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="column-title">About us</h3>
+            <hr class="sep">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'img/aboutusphoto.png' %}">
+        </div>
+        <div class="col-md-8">
+            <p>Handyman After Hours - A company you can trust.</p>
+            <p>Exceptional customer service, honesty, respect and pride in our professional work.</p>
+            <p>At Handyman After Hours we are committed to providing nothing less than the best service from our friendly, pleasant and courteous staff. From initial consultation, to the final clean up - we take responsibility every step of the way.</p>
+            <p>We not only handle all your residential needs, we also offer repair and remodeling services.</p>
+            <p>For a free estimate, simply give us a call at (631) 805 - 7232.</p>
+        </div>
+    </div>
+{% endblock %}

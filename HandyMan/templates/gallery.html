@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="column-title">Gallery</h3>
+            <hr class="sep">
+        </div>
+    </div>
+    <div class="row">
+        {% for object in object_list %}
+            <div class="col-md-5 col-sm-5 col-xs-5">
+                <a href="{% static object.thumbnail.url %}" target="_blank"><img src="{{ object.thumbnail.tiny.url }}"></a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -8,9 +8,27 @@ body {
     min-height: 150px !important;
 }
 
+@media only screen and (max-width: 700px) {
+    .navbar {
+        min-height: 0 !important;
+    }
+
+    .navbar-collapse {
+        margin-top: -30px;
+        -webkit-box-align:center;
+        -webkit-box-pack:center;
+        display:-webkit-box;
+    }
+
+    body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+
 .nav-link {
     color: #e0a434 !important;
-    /*padding-top: 3rem !important;*/
 }
 
 .nav-link:hover {
