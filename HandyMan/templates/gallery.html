@@ -2,6 +2,40 @@
 {% load staticfiles %}
 
 {% block content %}
+    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="row">
         <div class="col-md-12">
             <h3 class="column-title">Gallery</h3>
@@ -10,9 +44,12 @@
     </div>
     <div class="row">
         {% for object in object_list %}
-            <div class="col-md-5 col-sm-5 col-xs-5">
-                <a href="{% static object.thumbnail.url %}" target="_blank"><img src="{{ object.thumbnail.tiny.url }}"></a>
+            <div class="col-md-5 col-sm-5 col-xs-5" id="links">
+                <a href="{% static object.thumbnail.url %}" data-gallery><img src="{{ object.thumbnail.tiny.url }}"></a>
             </div>
         {% endfor %}
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="{% static 'js/bootstrap-image-gallery.min.js' %}"></script>
 {% endblock %}
